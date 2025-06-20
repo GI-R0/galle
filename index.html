@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Clon de Pinterest: busca y guarda tus imágenes favoritas." />
+  <title>Clon de Pinterest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <a href="#" id="logo-link" aria-label="Ir al inicio">
+      <img src="/assets/logopin.png" alt="Logo Pinterest Clon" id="logo" />
+    </a>
+
+    <form id="formularioBusqueda" role="search" aria-label="Formulario de búsqueda">
+      <input
+        type="text"
+        id="inputBusqueda"
+        placeholder="Buscar imágenes..."
+        aria-label="Campo de búsqueda"
+        required
+      />
+      <button type="submit" aria-label="Enviar búsqueda">Buscar</button>
+    </form>
+
+    <div class="menu">
+      <button class="hamburger" aria-label="Abrir menú de navegación">&#9776;</button>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#">Inicio</a>
+        <a href="#">Colecciones</a>
+        <a href="#">Favoritos</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="historial" id="historial" aria-label="Búsquedas recientes">
+    <!-- Botones de búsquedas recientes se insertan dinámicamente -->
+  </section>
+
+  <main class="masonry" id="contenedorImagenes" aria-live="polite">
+    <!-- Las tarjetas de imágenes se insertan dinámicamente aquí -->
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
