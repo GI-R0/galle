@@ -13,7 +13,7 @@ Una galería visual tipo Pinterest que permite buscar imágenes usando la API de
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/GI-R0/scorpion.git
+   git clone https://github.com/GI-R0/galle.git
    cd scorpion
    ```
 2. Instala las dependencias:
